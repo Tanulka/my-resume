@@ -1,13 +1,15 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background: #f5f7fa;
+  margin: 0;
+  padding: 40px 0;
 }
 .main-conteiner {
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
   background-color: #fff;
-  margin: 40px auto;
+  margin: 0 auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -246,4 +248,16 @@ soft skils section */
 .soft-skills-item-text,
 .language-skills-item-text {
   color: #fff;
+}
+
+@media print {
+  body {
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .main-conteiner {
+    box-shadow: none;
+    width: 100%;
+  }
 }
